@@ -1,4 +1,4 @@
 server:
-  message: hello123
+  message: hello1234
 mysql:
-  url: mysql123
+  url: mysql1234
