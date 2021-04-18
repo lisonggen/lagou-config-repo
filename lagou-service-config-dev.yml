@@ -1,1 +1,22 @@
-
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/lagou?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root1234
+  jpa:
+    database: MySQL
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl #避免将驼峰命名转换为下划线命名
+config:
+  email:
+    host: smtp.163.com
+    sender:
+      name:
+      password:
+    templates:
+      checkcode:
+        title: 注册验证码
+        content: 您好，本次登录的验证码为：%s，将在10分钟之后过期
